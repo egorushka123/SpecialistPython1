@@ -5,4 +5,19 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+
+len = int(input('введите длину плитки '))
+wid = int(input('введите ширину плитки '))
+br = int(input('введите кол во отломленных долек '))
+if len < wid and br < len:
+ print('no')
+elif wid < len and br < wid:
+ print('no')
+elif len%br==0 or wid%br==0:
+ print('yes')
+elif br%len==0 or br%wid==0:
+ print('yes')
+elif len%br!=0 or wid%b!=0:
+ print('no')
+elif br%len!=0 or br%wid!=0:
+ print('no')
