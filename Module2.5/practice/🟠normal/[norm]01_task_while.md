@@ -34,7 +34,12 @@ n = 5
 
 ```python
 # TODO: you code here...
-```
+```n = int(input("Введите количество ступенек "))
+count = 0
+step = ("*")
+while count<=n:
+    print(step*count)
+    count=count+1
 
 ---
 
