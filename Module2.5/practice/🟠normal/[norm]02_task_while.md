@@ -16,9 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
+# TODO: you code here...`
+terminate_value = "stop"
+print("Для окончания программы введите", terminate_value)
+input_value = int(input("Введите целое число "))
+count=0
+while terminate_value!=input_value:
+    input_value = int(input("Введите целое число "))
+    if input_value>0:
+        count+=1
+    print(count)
 ---
 
 ### Подсказки
