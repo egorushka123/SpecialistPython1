@@ -33,9 +33,14 @@ n = 12
 11 109.89 рублей
 12 119.88 рублей
 ```
-### Решение задачи
+### Решение 
+cost = float(input('Введите стоимость товара '))
+n = int(input ('Введите количество товара '))
+count = 0
+while count <n:
+	count=count+1
+	f = count*cost
+	print(count, end = ' ')
+	print(round(f,2))
 
-```python
-# TODO: you code here...
-```
 
